@@ -4,7 +4,7 @@ function About() {
     <div className="flex p-10 flex-col items-center">
         <nav>
           <ul>
-            <li className="border border-gray-300 rounded-lg pl-2 pr-2">
+            <li className="border border-gray-300 rounded-md pl-2 pr-2">
               <Link to="/">Home</Link>
             </li>
           </ul>

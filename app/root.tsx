@@ -28,9 +28,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR">
       <head>
-        <title>Learn React</title>
+        <title>React Learning</title>
         <meta charSet="utf-8" />
-        <meta name="description" content="Welcome to Learn React" />
+        <meta name="description" content="Welcome to React Learning" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Links />
       </head>
@@ -57,7 +57,7 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   let stack: string | undefined;
 
   if (isRouteErrorResponse(error)) {
-    message = error.status === 404 ? "404" : "Error";
+    message = error.status === 404 ? "Oops!" : "Error";
     details =
       error.status === 404
         ? "The requested page could not be found."

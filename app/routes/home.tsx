@@ -6,7 +6,7 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return (
     <>
-      <h1> Hello World!!</h1>
+      <h1> Welcome to React Learning</h1>
     </>
   );
 }
