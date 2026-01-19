@@ -44,18 +44,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return (
-    <><nav>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/firstComponent">First Component</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
-      </ul>
-    </nav>
-    <br/>
-    <Outlet />
-    </>
-  );
+  return <Outlet />;
+}
+
+export function HydrateFallback(){
+  return <div>Loading...</div>;
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
